@@ -19,7 +19,7 @@ gulp.task('sass', function (done) {
 });
 
 gulp.task('browserify', function(done) {
-    glob('./src/**/**/*.js', function(err, files) {
+    glob('./src/website/**/*.js', function(err, files) {
         if (err) {
             done(err);
         }
@@ -38,7 +38,7 @@ gulp.task('html', function() {
 
 gulp.task('watch', function() {
     gulp.watch('./src/styles/**/**/*.scss', ['sass']);
-    gulp.watch('./src/**/**/*.js', ['browserify']);
+    gulp.watch('./src/website/**/*.js', ['browserify']);
     gulp.watch('./src/index.html', ['html']);
 });
 

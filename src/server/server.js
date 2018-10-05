@@ -3,7 +3,9 @@ var port = 3000;
 var app = express();
 
 //to serve static files
-app.use(express.static(__dirname + '/build/'));
+app.use(express.static(__dirname + '/../../build/'));
+
+console.log(__dirname);
 
 app.get('/', function(req, res) {
     var options = {
