@@ -7,9 +7,9 @@ app.use(express.static(__dirname + '/../../build/'));
 
 console.log(__dirname);
 
-app.get('/', function(req, res) {
+app.get('/*', function(req, res) {
     var options = {
-        root: __dirname + '/build/'
+        root: __dirname + '/../../build/'
     };
     res.sendFile('index.html', options);
 });

@@ -18,6 +18,11 @@ gulp.task('sass', function (done) {
     });
 });
 
+gulp.task('vendor-css', function(done) {
+    var files = ['./node_modules/purecss/build/pure.css', './node_modules/purecss/build/grids-responsive.css'];
+    return gulp.src(files).pipe(concat('vendor.css')).pipe(gulp.dest('./build/'));
+});
+
 gulp.task('browserify', function(done) {
     glob('./src/website/**/*.js', function(err, files) {
         if (err) {
@@ -42,4 +47,4 @@ gulp.task('watch', function() {
     gulp.watch('./src/index.html', ['html']);
 });
 
-gulp.task('default', ['html', 'browserify', 'sass']);
+gulp.task('default', ['html', 'browserify', 'sass', 'vendor-css']);
