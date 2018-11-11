@@ -24,5 +24,8 @@
     "babelify": "^7.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.0.1"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/gulp; node src/server/server.js"
   }
 }

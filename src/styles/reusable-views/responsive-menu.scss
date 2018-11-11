@@ -8,6 +8,11 @@
     -moz-transition: height 0.5s;
     -ms-transition: height 0.5s;
     transition: height 0.5s;
+
+    //custom styles
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-bottom: 0;
 }
 
 .custom-wrapper.open {

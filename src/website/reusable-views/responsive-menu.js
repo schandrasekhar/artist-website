@@ -1,7 +1,6 @@
 import React from 'react'
 
-
-class Header extends React.Component {
+class ResponsiveMenu extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -65,7 +64,7 @@ class Header extends React.Component {
         <div  className={"custom-wrapper pure-g " + (this.state.openMenu ? 'open' : '')} id="menu">
           <div className="pure-u-1 pure-u-md-1-3">
               <div className="pure-menu">
-                  <a href="#" className="pure-menu-heading custom-brand">Padmasiri Artwork</a>
+                  <a href="/" className="pure-menu-heading custom-brand">Padmasiri</a>
                   <a href="#" className={"custom-toggle " + (this.state.openMenu ? 'x' : '')} id="toggle" onClick={this.toggleMenu}>
                   <s className="bar"></s><s className="bar"></s></a>
               </div>
@@ -73,9 +72,9 @@ class Header extends React.Component {
           <div className="pure-u-1 pure-u-md-1-3">
               <div className={"pure-menu custom-can-transform " + (this.state.enableVerticalView ? '' : 'pure-menu-horizontal')}>
                   <ul className="pure-menu-list">
-                      <li className="pure-menu-item"><a href="#" className="pure-menu-link">Home</a></li>
-                      <li className="pure-menu-item"><a href="#" className="pure-menu-link">Gallery</a></li>
-                      <li className="pure-menu-item"><a href="#" className="pure-menu-link">Contact</a></li>
+                      <li className="pure-menu-item"><a href="/home" className="pure-menu-link">Home</a></li>
+                      <li className="pure-menu-item"><a href="/gallery" className="pure-menu-link">Gallery</a></li>
+                      <li className="pure-menu-item"><a href="/contact" className="pure-menu-link">Contact</a></li>
                   </ul>
               </div>
           </div>
@@ -91,4 +90,4 @@ class Header extends React.Component {
     }
 }
 
-export default Header
+export default ResponsiveMenu
