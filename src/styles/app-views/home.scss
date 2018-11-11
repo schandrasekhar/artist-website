@@ -1,3 +1,14 @@
 .hero-image {
     width: -webkit-fill-available;
+    height: 40em;
+}
+
+.hero-text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: blue;
+    text-shadow: 2px 2px 4px white;
+    font-size: xx-large;
 }
