@@ -1,5 +1,5 @@
 import React from 'react'
-import ResponsiveMenu from '../reusable-views/responsive-menu'
+import {ResponsiveMenu} from 'cs-pure-react-comp'
 
 
 class Header extends React.Component {
