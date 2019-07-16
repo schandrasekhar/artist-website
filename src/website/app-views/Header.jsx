@@ -1,5 +1,5 @@
 import React from 'react'
-import {ResponsiveMenu} from 'cs-pure-react-comp'
+//import {ResponsiveMenu} from 'cs-pure-react-comp'
 
 
 class Header extends React.Component {
@@ -10,7 +10,7 @@ class Header extends React.Component {
     render() {
       return (
         <header>
-          <ResponsiveMenu />
+
         </header>
       );
     }

@@ -1,0 +1,13 @@
+
+> custom-framework@ start /Users/srigiriraju/Documents/my-github/artist-website
+> gulp; node src/server/server.js
+
+[21:35:06] Using gulpfile ~/Documents/my-github/artist-website/gulpfile.js
+[21:35:06] Starting 'html'...
+[21:35:06] Starting 'browserify'...
+[21:35:06] Starting 'sass'...
+[21:35:06] Starting 'vendor-css'...
+[21:35:06] Finished 'html' after 65 ms
+[21:35:06] Finished 'vendor-css' after 58 ms
+/Users/srigiriraju/Documents/my-github/artist-website/src/server
+Example app listening on port 3000!

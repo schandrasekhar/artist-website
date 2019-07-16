@@ -16,6 +16,7 @@ gulp.task('sass', function (done) {
                 .pipe(concat('bundle.css'))
                 .pipe(gulp.dest('./build/'))
     });
+    done();
 });
 
 gulp.task('vendor-css', function(done) {
@@ -24,7 +25,7 @@ gulp.task('vendor-css', function(done) {
 });
 
 gulp.task('browserify', function(done) {
-    glob('./src/website/**/*.js', function(err, files) {
+    glob('./src/website/**/*.jsx', function(err, files) {
         if (err) {
             done(err);
         }
@@ -34,6 +35,7 @@ gulp.task('browserify', function(done) {
                 .pipe(source('bundle.js'))
                 .pipe(gulp.dest('build'));
     });
+    done();
 });
 
 gulp.task('html', function() {
@@ -43,8 +45,8 @@ gulp.task('html', function() {
 
 gulp.task('watch', function() {
     gulp.watch('./src/styles/**/**/*.scss', ['sass']);
-    gulp.watch('./src/website/**/*.js', ['browserify']);
+    gulp.watch('./src/website/**/*.jsx', ['browserify']);
     gulp.watch('./src/index.html', ['html']);
 });
 
-gulp.task('default', ['html', 'browserify', 'sass', 'vendor-css']);
+gulp.task('default', gulp.series('html', 'browserify', 'sass', 'vendor-css'));
