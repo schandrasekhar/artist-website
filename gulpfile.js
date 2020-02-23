@@ -7,7 +7,7 @@ var glob = require('glob');
 var sass = require('gulp-sass');
 
 gulp.task('sass', function (done) {
-    glob('./src/styles/**/**/*.scss', function(err, files) {
+    glob('./src/website/styles/**/**/*.scss', function(err, files) {
         if (err) {
             done(err);
         }
@@ -44,7 +44,7 @@ gulp.task('html', function() {
 });
 
 gulp.task('watch', function() {
-    gulp.watch('./src/styles/**/**/*.scss', ['sass']);
+    gulp.watch('./src/website/styles/**/**/*.scss', ['sass']);
     gulp.watch('./src/website/**/*.jsx', ['browserify']);
     gulp.watch('./src/index.html', ['html']);
 });

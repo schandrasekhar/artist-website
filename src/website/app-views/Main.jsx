@@ -1,9 +1,8 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import Home from '../routes/Home.jsx'
-import Gallery from '../routes/Gallery.jsx'
-import Contact from '../routes/Contact.jsx'
-
+import Home from './Home.jsx'
+import Gallery from './Gallery.jsx'
+import Contact from './Contact.jsx'
 
 
 // The Main component renders one of the three provided
