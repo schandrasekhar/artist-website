@@ -2,7 +2,7 @@
   "name": "custom-framework",
   "repository": "git@github.com:schandrasekhar/artist-website.git",
   "dependencies": {
-    "express": "4.17.1",
+    "express": "4.17.3",
     "jquery": "3.5.0",
     "purecss": "1.0.0",
     "react": "16.4.1",
